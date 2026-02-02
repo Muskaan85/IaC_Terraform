@@ -3,7 +3,7 @@ name: Terraform CI
 on: [on push]
 
 jobs:
-  terraform:
+  terraform: 
     runs-on: ubuntu-latest
 
     steps:
