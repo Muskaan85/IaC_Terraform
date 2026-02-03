@@ -1,6 +1,9 @@
 name: Terraform CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   terraform:
@@ -28,4 +31,3 @@ jobs:
       - name: Terraform Plan
         run: |
           cd env/dev
-          terraform plan
